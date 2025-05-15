@@ -1,0 +1,73 @@
+=== REMAPS ===
+
+vnoremap S( c()<Esc>P
+vnoremap S{ c{}<Esc>P
+vnoremap S[ c[]<Esc>P
+
+" Centers the screen after paging down/up
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
+
+" Window/Views navigation remaps
+nnoremap <space>vs :vsc View.SolutionExplorer<Enter>
+nnoremap <space>vc :vsc View.GitHub.Copilot.Chat<Enter>
+nnoremap <space>vg :vsc View.GitWindow<Enter>
+nnoremap <space>vr :vsc View.GitRepositoryWindow<Enter>
+nnoremap <space>vo :vsc View.Output<Enter>
+nnoremap <space>v' :vsc View.Terminal<Enter>
+nnoremap <space>vt :vsc View.TaskList<Enter>
+nnoremap <space>vx :vsc View.Toolbox<Enter>
+
+
+" Document group remaps
+nnoremap <space>wn :vsc View.NavigateForward<Enter>
+nnoremap <space>wp :vsc View.NavigateBackward<Enter>
+nnoremap <space>wv :vsc Window.NewVerticalTabGroup<Enter>
+nnoremap <space>wl :vsc Window.MoveToNextTabGroup<Enter>
+nnoremap <space>wh :vsc Window.MoveToPreviousTabGroup<Enter>
+nnoremap <space>ww :vsc Window.MoveToMainDocumentGroup<Enter>
+nnoremap <space>wa :vsc File.CloseOtherTabs<Enter>
+
+" Files, Documents, Classes remaps
+nnoremap <space>nc :vsc Project.AddClass<Enter>
+nnoremap <space>nf :vsc Project.NewFolder<Enter>
+
+" Error list remaps
+nnoremap <space>ee :vsc View.ErrorList<Enter>
+nnoremap <space>en :vsc View.NextError<Enter>
+nnoremap <space>ep :vsc View.PreviousError<Enter>
+
+" Refactoring remaps
+nnoremap <space>rr :vsc Refactor.Rename<Enter>
+nnoremap <space>rf :vsc Edit.FormatDocument<Enter>
+
+" Build remaps
+nnoremap <space>bb :vsc Build.BuildSolution<Enter>
+nnoremap <space>bc :vsc Build.CleanSolution<Enter>
+nnoremap <space>br :vsc Build.RebuildSolution<Enter>
+nnoremap <space>bd :vsc Debug.Start<Enter>
+nnoremap <space>bw :vsc Debug.StartWithoutDebugging<Enter>
+nnoremap <space>bq :vsc Debug.StopDebugging<Enter>
+
+" Quick actions remaps
+nnoremap <space>. :vsc View.QuickActionsForPosition<Enter>
+
+=== SETTINGS ===
+
+" Allow copy and pasting from regular clipboard
+set clipboard=unnamed
+
+set number
+
+" Relative numbering of lines
+set relativenumber
+
+" Do not let cursor scroll below or above N number of lines when scrolling.
+set scrolloff=10
+
+" Use highlighting when doing a search.
+set hlsearch
+
+" Set the commands to save in history default number is 20.
+set history=1000
+
