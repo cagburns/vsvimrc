@@ -9,45 +9,42 @@ nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
 
 " Window/Views navigation remaps
-nnoremap <space>vs :vsc View.SolutionExplorer<Enter>
+nnoremap <space>ee :vsc View.SolutionExplorer<Enter>
 nnoremap <space>vc :vsc View.GitHub.Copilot.Chat<Enter>
 nnoremap <space>vg :vsc View.GitWindow<Enter>
 nnoremap <space>vr :vsc View.GitRepositoryWindow<Enter>
 nnoremap <space>vo :vsc View.Output<Enter>
-nnoremap <space>v' :vsc View.Terminal<Enter>
-nnoremap <space>vt :vsc View.TaskList<Enter>
+nnoremap <space>vt :vsc View.Terminal<Enter>
 nnoremap <space>vx :vsc View.Toolbox<Enter>
 
+" Editor Management
+nnoremap <leader>ww :w<Enter>
+nnoremap <leader>wa :vsc File.SaveAll<Enter>
+nnoremap <leader>wq :wq<Enter>
+nnoremap <leader>qq :vsc Window.CloseDocumentWindow<Enter>
 
-" Document group remaps
-nnoremap <space>wn :vsc View.NavigateForward<Enter>
-nnoremap <space>wp :vsc View.NavigateBackward<Enter>
-nnoremap <space>wv :vsc Window.NewVerticalTabGroup<Enter>
-nnoremap <space>wl :vsc Window.MoveToNextTabGroup<Enter>
-nnoremap <space>wh :vsc Window.MoveToPreviousTabGroup<Enter>
-nnoremap <space>ww :vsc Window.MoveToMainDocumentGroup<Enter>
-nnoremap <space>wa :vsc File.CloseOtherTabs<Enter>
+" Buffer Management
+nnoremap <leader>bn :vsc Window.NextTab<Enter>
+nnoremap <leader>bp :vsc Window.PreviousTab<Enter>
 
-" Files, Documents, Classes remaps
-nnoremap <space>nc :vsc Project.AddClass<Enter>
-nnoremap <space>nf :vsc Project.NewFolder<Enter>
+" Window Navigation
+nnoremap <leader>wv :vsc Window.NewVerticalTabGroup<Enter>
+nnoremap <leader>wh :vsc Window.PreviousSplitPane<Enter>
+nnoremap <leader>wl :vsc Window.NextSplitPane<Enter>
+
+" Refactoring and Formatting
+nnoremap <leader>rn :vsc Refactor.Rename<Enter>
+nnoremap <leader>ca :vsc View.QuickActionsForPosition<Enter>
+nnoremap <leader>rf :vsc Edit.FormatDocument<Enter>
 
 " Error list remaps
-nnoremap <space>ee :vsc View.ErrorList<Enter>
+nnoremap <space>tt :vsc View.ErrorList<Enter>
 nnoremap <space>en :vsc View.NextError<Enter>
 nnoremap <space>ep :vsc View.PreviousError<Enter>
 
-" Refactoring remaps
-nnoremap <space>rr :vsc Refactor.Rename<Enter>
-nnoremap <space>rf :vsc Edit.FormatDocument<Enter>
-
-" Build remaps
-nnoremap <space>bb :vsc Build.BuildSolution<Enter>
-nnoremap <space>bc :vsc Build.CleanSolution<Enter>
-nnoremap <space>br :vsc Build.RebuildSolution<Enter>
-nnoremap <space>bd :vsc Debug.Start<Enter>
-nnoremap <space>bw :vsc Debug.StartWithoutDebugging<Enter>
-nnoremap <space>bq :vsc Debug.StopDebugging<Enter>
+" Search
+nnoremap <leader>fg :vsc Edit.FindinFiles<Enter>
+nnoremap <leader>ff :vsc Edit.GoToAll<Enter>
 
 " Quick actions remaps
 nnoremap <space>. :vsc View.QuickActionsForPosition<Enter>
